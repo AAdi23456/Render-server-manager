@@ -17,7 +17,10 @@ const logger = winston.createLogger({
         new winston.transports.File({ filename: 'app.log' })
     ]
 });
-
+app.get("/h",(req,res)=>{
+    logger.info("Received a request on /h");
+    return res.json("hey")
+})
 app.get("/", async (req, res) => {
     logger.info("Received a request on /");
     startBackgroundTasks()
