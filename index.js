@@ -69,5 +69,5 @@ const startBackgroundTasks = () => {
         fetchEndpoints(urls);
 
         taskNumber++;
-    }, 10000); // Call every 10 seconds
+    }, 50000); // Call every 10 seconds
 };
