@@ -67,7 +67,7 @@ const startBackgroundTasks = () => {
 
         // Call the background task without awaiting it
         fetchEndpoints(urls);
-
+     logger.info(`task number${taskNumber}`)
         taskNumber++;
     }, 50000); // Call every 10 seconds
 };
