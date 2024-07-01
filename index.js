@@ -63,7 +63,7 @@ const startBackgroundTasks = () => {
         }
 
         // Call the background task without awaiting it
-        fetchEndpoints(taskNumber);
+        fetchEndpoints(urls);
 
         taskNumber++;
     }, 10000); // Call every 10 seconds
